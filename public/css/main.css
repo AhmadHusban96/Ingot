@@ -1,0 +1,721 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#intro {
+    background: url("/img/panorama-3094696_1920.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.top-nav-collapse {
+    background-color: #3949ab !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: #333a40 !important;
+}
+
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #3949ab !important;
+    }
+}
+
+#intro .h6 {
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.site-bg-img {
+    height: 100vh;
+    min-height: 480px;
+    max-height: 1080px;
+}
+
+.hm-gradient .site-bg-img {
+    background: rgba(42, 27, 161, 0.7);
+    background: linear-gradient(to right, #2d3033ab, #2d3033e6);
+}
+
+@media (max-width: 450px) {
+    .margins {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+#pricing .lead {
+    opacity: 0.7;
+}
+
+
+#pricing ul li {
+    font-size: 1.1em;
+}
+
+.img-fluid {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    --sa-uid: '0-d46cf348-e1f0-458f-5607-7d6a580d29c4';
+    font-family: 'Quicksand' !important;
+    line-height: inherit;
+    --tw-bg-opacity: 1 !important;
+    --tw-text-opacity: 1 !important;
+    color: inherit;
+    cursor: pointer !important;
+    border: 0 solid;
+    box-sizing: border-box;
+    --tw-border-opacity: 1;
+    border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+    --tw-shadow: 0 0 #0000;
+    --tw-ring-inset: var(--tw-empty,);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #333a40;
+    --tw-ring-color: rgba(59, 130, 246, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    border-style: solid;
+    display: block;
+    vertical-align: middle;
+    height: 50px;
+    max-width: 100%;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('/font/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('/font/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('/font/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('/font/poppins/Poppins-SemiBold.ttf');
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+
+/*---------------------------------------------*/
+a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*---------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+p {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+ul, li {
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+input {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    outline: none;
+    border: none;
+}
+
+textarea:focus, input:focus {
+    border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input:-moz-placeholder {
+    color: #fff;
+}
+
+input::-moz-placeholder {
+    color: #fff;
+}
+
+input:-ms-input-placeholder {
+    color: #fff;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+textarea:-moz-placeholder {
+    color: #fff;
+}
+
+textarea::-moz-placeholder {
+    color: #fff;
+}
+
+textarea:-ms-input-placeholder {
+    color: #fff;
+}
+
+label {
+    margin: 0;
+    display: block;
+}
+
+/*---------------------------------------------*/
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+.txt1 {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    color: #e5e5e5;
+    line-height: 1.5;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.container-login100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #2d3033ab, #2d3033e6);
+}
+
+.wrap-login100 {
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 55px 55px 37px 55px;
+
+    background: #9152f8;
+    background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+    background: -o-linear-gradient(top, #7579ff, #b224ef);
+    background: -moz-linear-gradient(top, #7579ff, #b224ef);
+    background: linear-gradient(top, #7579ff, #b224ef);
+}
+
+
+/*------------------------------------------------------------------
+[ Form ]*/
+
+.login100-form {
+    width: 100%;
+}
+
+.login100-form-logo {
+    font-size: 60px;
+    color: #333333;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.login100-form-title {
+    font-family: Poppins-Medium;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+
+    display: block;
+}
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+    margin-bottom: 30px;
+}
+
+.input100 {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px 0 38px;
+}
+
+/*---------------------------------------------*/
+.focus-input100 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+
+    background: #fff;
+}
+
+.focus-input100::after {
+    font-family: Material-Design-Iconic-Font;
+    font-size: 22px;
+    color: #fff;
+
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    padding-left: 5px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.input100:focus {
+    padding-left: 5px;
+}
+
+.input100:focus + .focus-input100::after {
+    top: -22px;
+    font-size: 18px;
+}
+
+.input100:focus + .focus-input100::before {
+    width: 100%;
+}
+
+.has-val.input100 + .focus-input100::after {
+    top: -22px;
+    font-size: 18px;
+}
+
+.has-val.input100 + .focus-input100::before {
+    width: 100%;
+}
+
+.has-val.input100 {
+    padding-left: 5px;
+}
+
+
+/*==================================================================
+[ Restyle Checkbox ]*/
+
+.contact100-form-checkbox {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+}
+
+.input-checkbox100 {
+    display: none;
+}
+
+.label-checkbox100 {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.2;
+
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+}
+
+.label-checkbox100::before {
+    content: "\f26b";
+    font-family: Material-Design-Iconic-Font;
+    font-size: 13px;
+    color: transparent;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background: #fff;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.input-checkbox100:checked + .label-checkbox100::before {
+    color: #555555;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login100-form-btn {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.2;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 120px;
+    height: 50px;
+    border-radius: 25px;
+
+    background: #9152f8;
+    background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
+    background: -o-linear-gradient(bottom, #7579ff, #b224ef);
+    background: -moz-linear-gradient(bottom, #7579ff, #b224ef);
+    background: linear-gradient(bottom, #7579ff, #b224ef);
+    position: relative;
+    z-index: 1;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login100-form-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    opacity: 1;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login100-form-btn:hover {
+    color: #fff;
+}
+
+.login100-form-btn:hover:before {
+    opacity: 0;
+}
+
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+    .wrap-login100 {
+        padding: 55px 15px 37px 15px;
+    }
+}
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+    position: relative;
+}
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: #fff;
+    border: 1px solid #c80000;
+    border-radius: 2px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0px;
+    pointer-events: none;
+
+    font-family: Poppins-Regular;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+    content: "\f12a";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #c80000;
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.img-100px {
+    cursor: unset !important;
+    height: 100px;
+
+}
+
+.form-text, .form-text:hover {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    box-sizing: border-box;
+    touch-action: manipulation;
+    font-family: Poppins-Regular;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: .375rem;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: normal;
+    border: 0;
+    border-radius: .125rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}

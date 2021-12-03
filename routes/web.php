@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Auth::routes();
+Route::middleware('is_admin')->group(function () {
+    Route::prefix('admin')->group(function () {
+        Route::get('home', [HomeController::class, 'adminHome'])->name('admin.home');
+    });
+});
+Route::middleware('is_user')->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
 });
