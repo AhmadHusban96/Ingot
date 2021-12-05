@@ -33,6 +33,21 @@ class HomeController extends Controller
      */
     public function adminHome()
     {
-        return view('adminHome');
+        return view('admin.dashboard');
+    }
+
+    public function Users()
+    {
+        return view('admin.users');
+    }
+
+    public function PaymentMethods()
+    {
+        return view('admin.paymentMethods');
+    }
+
+    public function Currencies()
+    {
+        return view('admin.currencies');
     }
 }
