@@ -20,9 +20,11 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->boolean('is_admin')->default(0);
+            $table->boolean('is_blocked')->default(0);
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes('deleted_at');
             $table->engine = 'InnoDB';
         });
     }
